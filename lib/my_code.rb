@@ -32,3 +32,8 @@ def reduce_to_all_true(source_array)
   source_array.each{|element| return false if !element}
   return true
 end
+
+def reduce_to_any_true(source_array)
+  source_array.each{|element| return true if element}
+  return false
+end
